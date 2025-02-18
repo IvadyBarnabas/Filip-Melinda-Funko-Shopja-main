@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+}
+
+header {
+    background-image: url('kepek/dark-background-abstract-background-network-3d-background-3840x2160-8324.png');
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-image: url('kepek/dark-background-abstract-background-network-3d-background-3840x2160-8324.png');
+    color: white;
+    margin-top: 20px;
+}
+
+.uzenet{
+    margin:auto;
+    text-align: center;
+  
+}
+.uzenetszegely{
+    padding: 10px;
+    width: 250px;
+    border: 3px solid #2236e6;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out; 
+}
+.uzenetszegely{
+    border-color: #575757;
+    
+}
+.uzenetszegely:focus{
+    background-color: rgba(170, 170, 170, 0.397);
+    border-color: #527ac9;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: azure;
+}
+.back_button {
+    max-width: fit-content;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #6b6c6e;
+
+}
+.back_button:hover {
+    background-color: #939496;
+    transform: scale(1.01);
+    transition: ease-in-out 0.1s;
+}

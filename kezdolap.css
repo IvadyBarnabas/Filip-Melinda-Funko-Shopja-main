@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+}
+
+header {
+    background-image: url('kepek/dark-background-abstract-background-network-3d-background-3840x2160-8324.png');
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-image: url('kepek/dark-background-abstract-background-network-3d-background-3840x2160-8324.png');
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    max-width: fit-content;
+    border: solid 1px #000;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color:  #6b6c6e;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+nav ul li a:hover {
+    background-color: #939496;
+    transform: scale(1.01);
+    transition: ease-in-out 0.1s;
+}
+.navigation:hover {
+    background-color: #939496;
+    transform: scale(1.1);
+    transition: ease-in-out 0.1s;
+}
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+.price {
+    display: block;
+    font-weight: bold;
+    color: #2236e6;
+    margin: 10px 0;
+}
+#tasm {
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+
+#tasm:hover {
+    content: url('kepek/tasmfigure.jpg');
+}
+#moonknight{
+    transition: opacity 0.3s ease-in-out; 
+    display: block;
+}
+#moonknight:hover{
+    content: url('kepek/moonknightfigure.jpg');
+}
+#optimusprime{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#optimusprime:hover{
+    content: url('kepek/optimusprimefigure.jpg');
+}
+@media screen and (max-width: 1300px) {
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 900px) {
+    .products {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media screen and (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 400px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}

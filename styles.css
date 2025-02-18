@@ -1,0 +1,558 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+}
+
+header {
+    background-image: url('kepek/dark-background-abstract-background-network-3d-background-3840x2160-8324.png');
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+#searchInput {
+    padding: 10px;
+    width: 250px;
+    border: 4px solid #2236e6;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#searchInput:focus {
+    border-color: #000586;
+}
+
+.search-container button {
+    background: #2236e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.search-container button:hover {
+    background: #000586;
+}
+
+.product {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.product[style*="display: none"] {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    max-width: fit-content;
+    border: solid 1px #000;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color:  #6b6c6e;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav ul li a:hover {
+    background-color: #939496;
+    transform: scale(1.01);
+    transition: ease-in-out 0.1s;
+}
+
+.navigation:hover {
+    background-color: #939496;
+    transform: scale(1.1);
+    transition: ease-in-out 0.1s;
+}
+
+.product-list {
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: azure;
+}
+
+.back_button {
+    max-width: fit-content;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #6b6c6e;
+}
+
+.back_button:hover {
+    background-color: #939496;
+    transform: scale(1.01);
+    transition: ease-in-out 0.1s;
+}
+
+@media screen and (max-width: 1300px) {
+    .products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .products {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.product:hover{
+    transform: scale(1.1);
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    color: #2236e6;
+    margin: 10px 0;
+}
+
+button {
+    background: #2236e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #000586;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-image: url('kepek/dark-background-abstract-background-network-3d-background-3840x2160-8324.png');
+    color: white;
+    margin-top: 20px;
+}
+/* Kategóriák */
+#categoryFilter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#categoryFilter {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#categoryFilter:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#categoryFilter a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    background-color: #2236e6;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+#categoryFilter a:hover {
+    background-color: #000586;
+}
+
+/* Kosár Stílusok */
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.cart-item .item-name {
+    font-size: 1rem;
+    color: #333;
+}
+
+.cart-item .item-price {
+    font-weight: bold;
+    color: #2236e6;
+}
+
+.cart-total {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+}
+
+.cart button {
+    width: 100%;
+    margin-top: 10px;
+}
+#xmas {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#xmas:hover {
+    content: url('kepek/xmasfigure.jpg');
+}
+
+#tasm {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#tasm:hover {
+    content: url('kepek/tasmfigure.jpg');
+}
+#bodegacat{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#bodegacat:hover{
+    content: url('kepek/bodegacatfigure.jpg');
+}
+#carnagegwen{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#carnagegwen:hover{
+    content: url('kepek/carnagegwenfigure.jpg');
+}
+#omniman{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#omniman:hover{
+    content: url('kepek/omnimanfigure.jpg');
+}
+#harleyquinn{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#harleyquinn:hover{
+    content: url('kepek/harleyquinnfigure.jpg');
+}
+#moonknight{
+    transition: opacity 0.3s ease-in-out; 
+    display: block;
+}
+#moonknight:hover{
+    content: url('kepek/moonknightfigure.jpg');
+}
+#mimikyu{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#mimikyu:hover{
+    content: url('kepek/mimikyufigure.jpg');
+}
+#ladypool{
+    transition: opacity 0.3s ease-in-out;   
+    display: block;
+}
+#ladypool:hover{
+    content: url('kepek/ladypoolfigure.jpg');
+}
+#denji{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#denji:hover{
+    content: url('kepek/denjifigure.jpg');
+}
+#droid{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#droid:hover{
+    content: url('kepek/droidfigure.jpg');
+}
+#scream{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#scream:hover{
+    content: url('kepek/screamfigure.jpg');
+}
+#deadpoolheadpool{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#deadpoolheadpool:hover{
+content: url('kepek/deadpool&headpoolfigure.jpg');
+}
+#vigilantedeku{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#vigilantedeku:hover{
+    content: url('kepek/vigilantedekufigure.jpg');
+}
+#sagemode{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#sagemode:hover{
+    content: url('kepek/sagemodefigure.jpg');
+}
+#frontman{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#frontman:hover{
+    content: url('kepek/frontmanfigure.jpg');
+}
+#thebatman{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#thebatman:hover{
+    content: url('kepek/batman22figure.jpg');
+}
+#shuri{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#shuri:hover{
+    content: url('kepek/shurifigure.jpg');
+}
+#optimusprime{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#optimusprime:hover{
+    content: url('kepek/optimusprimefigure.jpg');
+}
+#pochita{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#pochita:hover{
+    content: url('kepek/pochitafigure.jpg');
+}
+#shadow{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#shadow:hover{
+    content: url('kepek/shadowfigure.jpg');
+}
+#jack{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#jack:hover{
+    content: url('kepek/jackfigure.jpg');
+}
+#keqing{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#keqing:hover{
+    content: url('kepek/keqingfigure.jpg');
+}
+#verstappen{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#verstappen:hover{
+content: url('kepek/verstappenfigure.jpg');
+}
+#mandovalentine{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#mandovalentine:hover{
+content: url('kepek/mandovalentinefigure.jpg');
+}
+#megazord{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#megazord:hover{
+content: url('kepek/megazordfigure.jpg');
+}
+#bumblebee{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#bumblebee:hover{
+content: url('kepek/bumblebeefigure.jpg');
+}
+#antivenom{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#antivenom:hover{
+    content: url('kepek/antivenomfigure.jpg');
+}
+#sarada{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#sarada:hover{
+    content: url('kepek/saradafigure.jpg');
+}
+#bowlingpool{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#bowlingpool:hover{
+    content: url('kepek/bowlingpoolfigure.jpg');
+}
+#gmiles{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#gmiles:hover{
+    content: url('kepek/gmilesfigure.jpg');
+}
+#godzilla84{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#godzilla84:hover{
+    content: url('kepek/godzilla84figure.jpg');
+}
+#greninja{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#greninja:hover{
+    content: url('kepek/greninjafigure.jpg');
+}
+#grayhalo{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#grayhalo:hover{
+    content: url('kepek/grayhalofigure.jpg');
+}
+#venommiles{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#venommiles:hover{
+    content: url('kepek/venommilesfigure.jpg');
+}
+#santafreddy{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#santafreddy:hover{
+    content: url('kepek/xmasfreddyfigure.jpg');
+}
+#boruto{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#boruto:hover{
+    content: url('kepek/borutofigure.jpg');
+}
