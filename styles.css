@@ -82,6 +82,7 @@ nav ul li a {
     padding-right: 4px;
     padding-top: 1px;
     padding-bottom: 1px;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 

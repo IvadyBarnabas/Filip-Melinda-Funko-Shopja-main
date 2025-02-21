@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #0051ff, #ac008f);
-
     color: white;
   }
   
@@ -68,28 +67,28 @@ body {
   .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 10px;
+    align-items: top;
+    max-width: 650px;
+    margin: auto;
+    
   }
   
   .product {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
-    border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s;
     max-width: 150px;
   }
   
-  .product:hover {
-        transform: scale(1.1);
-  }
-  
+
   .product img {
     max-width: 150px;
     height: auto;
     border-radius: 5px;
+  }
+  .product img:hover{
+    transform: scale(1.15);
   }
   
   .price {
