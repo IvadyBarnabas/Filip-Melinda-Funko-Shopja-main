@@ -8,12 +8,12 @@ body {
 header {
     background-image: url('kepek/dark-background-abstract-background-network-3d-background-3840x2160-8324.png');
     color: white;
-    padding: 1rem;
+    padding: 30px;
     text-align: center;
 }
 
 .search-container {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center; 
     margin-top: 10px;
@@ -23,7 +23,7 @@ header {
 #searchInput {
     padding: 10px;
     width: 250px;
-    border: 4px solid #2236e6;
+    border: 4px solid #0051ff;
     border-radius: 5px;
     font-size: 1rem;
     outline: none;
@@ -32,10 +32,11 @@ header {
 
 #searchInput:focus {
     border-color: #000586;
+    background-color: rgb(201, 201, 201);
 }
 
 .search-container button {
-    background: #2236e6;
+    background: #0051ff;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -67,7 +68,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 25px;
 }
 
 nav ul li a {
@@ -75,15 +76,13 @@ nav ul li a {
     border: solid 1px #000;
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 25px;
     border-radius: 10px;
     background-color:  #6b6c6e;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 nav ul li a:hover {
@@ -153,13 +152,14 @@ a {
 }
 
 .product {
-    background: white;
+    background: rgba(255, 255, 255, 0.2);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     object-fit: cover;
     margin: 10px;
+    color: white;
 }
 
 .product img {
@@ -172,18 +172,16 @@ a {
 
 .product h2 {
     font-size: 1.2rem;
-    color: #333;
 }
 
 .price {
     display: block;
     font-weight: bold;
-    color: #2236e6;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 button {
-    background: #2236e6;
+    background: #ff7eba;
     color: white;
     border: none;
     padding: 10px;
@@ -193,7 +191,7 @@ button {
 }
 
 button:hover {
-    background: #000586;
+    background: rgb(185, 81, 125);
 }
 
 footer {
@@ -300,6 +298,7 @@ footer {
 }
 #xmas {
     transition: opacity 0.3s ease-in-out;
+    background-color: white;
 }
 
 #xmas:hover {
@@ -330,9 +329,11 @@ footer {
 #omniman{
     transition: opacity 0.3s ease-in-out;
     display: block;
+    background-color: white;
 }
 #omniman:hover{
     content: url('kepek/omnimanfigure.jpg');
+    background-color: white;
 }
 #harleyquinn{
     transition: opacity 0.3s ease-in-out;
@@ -347,6 +348,7 @@ footer {
 }
 #moonknight:hover{
     content: url('kepek/moonknightfigure.jpg');
+    background-color: white;
 }
 #mimikyu{
     transition: opacity 0.3s ease-in-out;
