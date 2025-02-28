@@ -161,10 +161,3 @@ button:hover {
     transform: scale(1.01);
     transition: ease-in-out 0.1s;
 }
-#arachknight{
-    transition: opacity 0.3s ease-in-out;
-    display: block;
-}
-#arachknight:hover{
-    content: url('kepek/arachknightfigure.jpg');  
-}
