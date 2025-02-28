@@ -560,3 +560,10 @@ content: url('kepek/bumblebeefigure.jpg');
 #boruto:hover{
     content: url('kepek/borutofigure.jpg');
 }
+#piplup{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#piplup:hover{
+    content: url('kepek/piplupfigure.jpg');  
+}
