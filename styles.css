@@ -11,6 +11,9 @@ header {
     padding: 30px;
     text-align: center;
 }
+p:hover{
+
+}
 
 .search-container {
     display: grid;
@@ -203,8 +206,7 @@ footer {
 }
 /* Kategóriák */
 #categoryFilter {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
     padding: 20px;
 }
@@ -267,7 +269,7 @@ footer {
 }
 
 .cart-item {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;

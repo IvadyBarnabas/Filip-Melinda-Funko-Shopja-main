@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILIP & MELINDA FUNKO SHOPJA</title>
+    <link rel="stylesheet" href="arachknight.css">
+</head>
+<body>
+    <header>
+        <div class="back_button"><a href="termekek.html">Vissza</a></div>
+        <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Keresés termékek között..." />
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <div class="container">
+                <div class="product">
+                    <img id="arachknight" src="kepek/arachknight.jpg" alt="Arachknight figura">
+                    <div class="product-info">
+                        <h1>Funko POP! Infinity Warps - Arachknight Vinyl figura 10cm</h1>
+                        <p>Az Arachknight egy különleges Marvel karakter, amely Pókember és Holdlovag egyesítéséből született. Részletgazdag kidolgozásával és ikonikus megjelenésével minden gyűjtő polcán méltó helyet foglal el.</p>
+                        <p class="price">6 990 Ft</p>
+                        <button>Kosárba</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <footer>
+        <p>&copy; 2025 Webshop. Minden jog fenntartva.</p>
+      </footer>
+</body>
+<script>
+function filterProducts() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let products = document.getElementsByClassName("product");
+    for (let product of products) {
+      let title = product.getElementsByTagName("h2")[0].innerText.toLowerCase();
+      product.style.display = title.includes(input) ? "block" : "none";
+    }
+  }
+</script> 
+</html>
