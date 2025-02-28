@@ -135,10 +135,10 @@ body {
 #megazord:hover{
 content: url('kepek/megazordfigure.jpg');
 }  
-#gmiles{
-    transition: opacity 0.3s ease-in-out;
-    display: block;
+#arachknight{
+  transition: opacity 0.3s ease-in-out;
+  display: block;
 }
-#gmiles:hover{
-    content: url('kepek/gmilesfigure.jpg');
+#arachknight:hover{
+  content: url('kepek/arachknightfigure.jpg');  
 }

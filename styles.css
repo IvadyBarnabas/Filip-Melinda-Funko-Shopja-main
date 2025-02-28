@@ -567,3 +567,17 @@ content: url('kepek/bumblebeefigure.jpg');
 #piplup:hover{
     content: url('kepek/piplupfigure.jpg');  
 }
+#arachknight{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#arachknight:hover{
+    content: url('kepek/arachknightfigure.jpg');  
+}
+#spidergwen{
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+#spidergwen:hover{
+    content: url('kepek/spidergwenfigure.jpg');
+}
