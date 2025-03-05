@@ -106,8 +106,7 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .product {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: space-between;
 }
 .product img {
